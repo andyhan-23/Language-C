@@ -122,6 +122,7 @@ int main(void)
 }
 */
 
+/*
 #include <stdio.h>
 
 int main(void)
@@ -153,5 +154,22 @@ int main(void)
     }
 
     return 0;
+}
+*/
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+	char str1[20];
+	char str2[20];
+
+	printf("이름을 입력하세요");
+	gets_s(str1);
+	
+	sprintf_s(str2, "%s씨 안녕하세요", str1);
+	puts(str2);
+
+	return 0;
 }
 
